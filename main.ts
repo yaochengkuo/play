@@ -1,9 +1,9 @@
-input.onGesture(Gesture.Shake, function () {
-    拍手次數 = 1
+input.onButtonPressed(Button.A, function () {
+    拍手次數 = -1
 })
 input.onSound(DetectedSound.Loud, function () {
     if (input.soundLevel() > 110) {
-        拍手次數 += -1
+        拍手次數 += 1
         basic.showLeds(`
             . . . . #
             . # . . #
