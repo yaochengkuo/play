@@ -1,6 +1,3 @@
-input.onButtonPressed(Button.A, function () {
-    拍手次數 += 2
-})
 input.onSound(DetectedSound.Loud, function () {
     if (input.soundLevel() > 245) {
         拍手次數 += 1
